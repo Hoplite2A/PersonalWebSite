@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dave Mailloux Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="../pws.css" />
-    <script src="../pws.js"></script>
+    <!-- <script src="../pws.js"></script> -->
   </head>
   <body>
     <header>
@@ -13,16 +13,19 @@
     </header>
     <section class="navigation">
       <nav>
-        <a class="navLinks1" href="./pwsHome.html">HOME</a>
-        <a class="navLinks2" href="./pwsAbout.html">ABOUT</a>
-        <a class="navLinks3" class="onThisPage" href="./pwsPortfolio.html"
+        <a class="navLinks1 navHome" href="./pwsHome.html">HOME</a>
+        <a class="navLinks2 navAbout" href="./pwsAbout.html">ABOUT</a>
+        <a
+          class="navLinks3 navThisPage"
+          class="onThisPage"
+          href="./pwsPortfolio.html"
           >PORTFOLIO</a
         >
       </nav>
     </section>
     <section class="portfolio">
-      <div class="catchPhrase">
-        <h2>Projects worked on</h2>
+      <div class="catchPhrase pH2">
+        <h2>PROJECTS WORKED ON</h2>
       </div>
       <div class="projectOne portfolio">
         <h4>Project-One</h4>
@@ -44,8 +47,12 @@
       </div>
       <div class="projectTwo portfolio">
         <h4>Project-Two</h4>
-        <a class="projectLink" href="#" target="_blank">
-          <img src="../assets/project2.png" alt="Project 2" />
+        <a
+          class="projectLink"
+          href="https://www.youtube.com/watch?v=SH3lR2GLgT0"
+          target="_blank"
+        >
+          <img src="../assets/project2.jpg" alt="Project 2" />
         </a>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -58,8 +65,8 @@
       </div>
       <div class="projectThree portfolio">
         <h4>Project 3</h4>
-        <a class="projectLink" href="#" target="_blank">
-          <img src="../assets/project3.png" alt="Project 3" />
+        <a class="projectLink" href="https://exomotive.com/" target="_blank">
+          <img src="../assets/project3-kitcar.jpg" alt="Project 3" />
         </a>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -77,29 +84,21 @@
         href="https://linkedin.com/in/dmailloux-1776"
         target="_blank"
       >
-        <img
-          src="../assets/linkedinLogo.jpg"
-          width="25px"
-          alt="LinkedIn Logo"
-        />
+        <img src="../assets/linkedinLogo.jpg" width="35" alt="LinkedIn Logo" />
       </a>
       <a
         class="socialLinks"
         href="https://instagram.com/hopliteoverlander?igshid=OGQ5ZDc2ODk2ZA=="
         target="_blank"
       >
-        <img src="../assets/instagramLogo.png" width="25px" alt="" />
+        <img src="../assets/instagramLogo.png" width="35" alt="" />
       </a>
       <a
         class="socialLinks"
         href="mailto:stgdave.mailloux@gmail.com?subject=Interested in an Interview&body=Hey we are interested in your work and would like to speak to you. Please contact us at:(XXX)-XXX-XXXX"
         target="_blank"
       >
-        <img
-          src="../assets/gmailLogo.webp"
-          width="25x"
-          alt="Google Mail Logo"
-        />
+        <img src="../assets/gmailLogo.webp" width="35" alt="Google Mail Logo" />
       </a>
     </footer>
   </body>

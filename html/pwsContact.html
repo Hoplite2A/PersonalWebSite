@@ -39,6 +39,8 @@
                 type="text"
                 id="fname"
                 name="fname"
+                onclick="if(this.value == 'First Name') {this.value = ''; }"
+                onclick="if(this.value == '') {this.value = 'First Name'; }"
                 value="First Name"
               />
             </div>
@@ -49,6 +51,7 @@
                 type="text"
                 id="mInitial"
                 name="mInitial"
+                onclick="if(this.value == 'Middle Initial') {this.value = ''; }"
                 value="Middle Initial"
               />
             </div>
@@ -59,6 +62,7 @@
                 type="text"
                 id="lname"
                 name="lname"
+                onclick="if(this.value == 'Last Name') {this.value = ''; }"
                 value="Last Name"
               />
             </div>
@@ -71,7 +75,8 @@
                 type="email"
                 id="email"
                 name="email"
-                value="Email Address"
+                onclick="if(this.value == 'John.Doe@gmail.com') {this.value = ''; }"
+                value="John.Doe@gmail.com"
               />
             </div>
             <div class="phoneNumber contactField">
@@ -96,6 +101,7 @@
                 name="pNumber"
                 maxlength="13"
                 size="10"
+                onclick="if(this.value == 'x-xxx-xxx-xxxx') {this.value = ''; }"
                 value="x-xxx-xxx-xxxx"
               />
             </div>
@@ -116,7 +122,10 @@
             </div>
           </div>
           <div class="submit button">
-            <input type="submit" />
+            <!-- <input type="submit" /> -->
+            <button class="submit" type="submit">
+              SUBMIT
+            </button>
           </div>
           <!-- <button type="submit"></button> -->
         </form>

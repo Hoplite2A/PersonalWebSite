@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave Mailloux Portfolio Page</title>
+    <link rel="stylesheet" type="text/css" href="../pws.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="headerName">Dave Mailloux</h2>
+    </header>
+    <section class="navigation">
+      <nav>
+        <a class="navLinks1 navThisPage" href="./pwsHome.html">HOME</a>
+        <a class="navLinks2 navAbout" href="./pwsAbout.html">ABOUT</a>
+        <a
+          class="navLinks3 navPortfolio"
+          class="onPortfolio"
+          href="./pwsPortfolio.html"
+          >PORTFOLIO</a
+        >
+        <a class="navLinks4 navThisPage" href="./pwsContact.html">CONTACT</a>
+      </nav>
+    </section>
+    <section class="contactMain">
+      <section class="contactGreeting">
+        <div class="catchPhrase contact cH2">
+          <h3>CONTACT ME</h3>
+        </div>
+      </section>
+      <section class="contactForm">
+        <form class="contactSubmitForm" action="./pwsContactSbumitMessage.html">
+          <div class="personalInfo name">
+            <div class="firstName contactField">
+              <!-- <label class="contactField1" for="fname">First Name: </label> -->
+              <input
+                class="contactField1 hoverOverlay"
+                type="text"
+                id="fname"
+                name="fname"
+                value="First Name"
+              />
+            </div>
+            <div class="middleInitial contactField">
+              <!-- <label class="contactField1" for="mInitial">Middle Initial: </label> -->
+              <input
+                class="contactField1"
+                type="text"
+                id="mInitial"
+                name="mInitial"
+                value="Middle Initial"
+              />
+            </div>
+            <div class="lastName contactField">
+              <!-- <label class="contactField1" for="lname">Last Name: </label> -->
+              <input
+                class="contactField1"
+                type="text"
+                id="lname"
+                name="lname"
+                value="Last Name"
+              />
+            </div>
+          </div>
+          <div class="contactInfo contactField">
+            <div class="emailAddress">
+              <!-- <label class="contactField1" for="email">Email Address: </label> -->
+              <input
+                class="contactField1"
+                type="email"
+                id="email"
+                name="email"
+                value="Email Address"
+              />
+            </div>
+            <div class="phoneNumber contactField">
+              <!-- <label class="contactField1" for="phoneType"
+                >Phone Number:
+              </label> -->
+              <select
+                class="phoneType contactField1"
+                name="phoneType"
+                id="phoneType"
+              >
+                <option value="">Type</option>
+                <option value="cell">Cell</option>
+                <option value="home">Home</option>
+                <option value="work">Work</option>
+              </select>
+              <label for="pNumber"></label>
+              <input
+                class="phoneCallNumber contactField1"
+                type="text"
+                id="pNumber"
+                name="pNumber"
+                maxlength="13"
+                size="10"
+                value="x-xxx-xxx-xxxx"
+              />
+            </div>
+          </div>
+          <div class="directMessage">
+            <div class="messageMe">
+              <h5 class="messagePrompt">
+                Send me a short message if you're interested in working on a
+                project together.
+              </h5>
+              <textarea
+              class="contactMessageField"
+                name="messageMeField"
+                id="messageMeField"
+                cols="120"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="submit button">
+            <input type="submit" />
+          </div>
+          <!-- <button type="submit"></button> -->
+        </form>
+      </section>
+    </section>
+    <footer>
+      <a
+        class="socialLinks"
+        href="https://linkedin.com/in/dmailloux-1776"
+        target="_blank"
+      >
+        <img src="../assets/linkedinLogo.jpg" width="35" alt="LinkedIn Logo" />
+      </a>
+      <a
+        class="socialLinks"
+        href="https://instagram.com/hopliteoverlander?igshid=OGQ5ZDc2ODk2ZA=="
+        target="_blank"
+      >
+        <img src="../assets/instagramLogo.png" width="35" alt="" />
+      </a>
+      <a
+        class="socialLinks"
+        href="mailto:stgdave.mailloux@gmail.com?subject=Interested in an Interview&body=Hey we are interested in your work and would like to speak to you. Please contact us at:(XXX)-XXX-XXXX"
+        target="_blank"
+      >
+        <img src="../assets/gmailLogo.webp" width="35" alt="Google Mail Logo" />
+      </a>
+    </footer>
+  </body>
+</html>

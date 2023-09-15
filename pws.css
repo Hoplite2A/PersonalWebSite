@@ -40,7 +40,8 @@ section.navigation {
 }
 a.navLinks1,
 a.navLinks2,
-a.navLinks3 {
+a.navLinks3,
+a.navLinks4 {
   text-decoration: none;
   color: rgb(255, 127, 0);
   font-weight: 500;
@@ -82,10 +83,6 @@ div.hH2 > p {
   font-weight: 700;
 }
 div.quote {
-  /* justify-content: center  */
-  /* text-align: center; */
-  /* margin: 0 auto; */
-  background-color: transparent;
   margin-top: 50px;
 }
 blockquote.learningQuote {
@@ -108,11 +105,12 @@ blockquote.learningQuoteName {
   text-decoration: none;
 }
 img.learningQuoteName {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 div.quoteClose {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 footer {
   background-color: rgb(32, 32, 32);
@@ -133,9 +131,115 @@ div.catchPhrase > h2 {
   font-weight: 800;
   font-size: 0.75em;
 }
+section.contactGreeting {
+  text-align: center;
+}
+section.contactMain {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 125px 55px 56px 55px;
+  display: flex;
+  flex-direction: column;
+}
+form.contactSubmitForm {
+  display: flex;
+  flex-direction: column;
+}
+div.personalInfo,
+div.contactInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+div.personalInfo.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contactField1 {
+  margin-left: 20px;
+}
+label.contactField {
+  margin-right: 15px;
+}
+div.submit.button {
+  text-align: center;
+}
+div.contactField {
+  display: flex;
+  flex-direction: row;
+  font-size: medium;
+}
+input.phoneCallNumber.contactField1 {
+  margin-left: 6px;
+}
+h5.messagePrompt {
+  color: rgb(255, 127, 0);
+  text-decoration: none;
+  font-weight: 400;
+}
+div.sqlInjections > p,
+div.contentArticle > p,
+div.randomVideo > p {
+  font-size: medium;
+}
+.contactField1:hover,
+.contactMessageField:hover {
+  opacity: 1;
+  transition: 2s;
+  background-color: rgb(255,127, 0);
+}
+div.directMessage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+section.successMessageMain {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+div.contactMassageSuccess {
+  display: flex;
+  flex-direction: column;
+}
 section.portfolio {
   font-family: Arial, Helvetica, sans-serif;
   margin: 55px 10%;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+h3.successMessage > strong {
+  color: rgb(255, 127, 0);
+  text-align: center;
+}
+h3.successMessageSignature {
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 60%;
+}
+section.additionalContent {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  justify-content: space-between;
+}
+div.contentVideos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+div.ifURBored {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+h6.bordem {
+  text-align: center;
+  margin: 0px 10%;
 }
 section.interestshobbies {
   font-family: Arial, Helvetica, sans-serif;

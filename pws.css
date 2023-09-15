@@ -188,7 +188,7 @@ div.randomVideo > p {
 .contactMessageField:hover {
   opacity: 1;
   transition: 2s;
-  background-color: rgb(255,127, 0);
+  background-color: rgb(255, 127, 0);
 }
 div.directMessage {
   display: flex;

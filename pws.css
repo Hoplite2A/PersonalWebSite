@@ -1,3 +1,36 @@
+@media (682px <= width <= 1100px) or (orientation: landscape) {
+  .desktop {
+    display: block;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media (429px <= width <= 681px) {
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
+@media (width <= 428px) {
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
 body {
   height: 100%;
   margin: 0;

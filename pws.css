@@ -1,4 +1,7 @@
-@media (682px <= width <= 1100px) or (orientation: landscape) {
+/* @media (682px <= width <= 1100px) or (orientation: landscape) 
+OR
+@media (min-wdith:682px) 
+{
   .desktop {
     display: block;
   }
@@ -8,29 +11,8 @@
   .mobile {
     display: none;
   }
-}
-@media (429px <= width <= 681px) {
-  .desktop {
-    display: none;
-  }
-  .tablet {
-    display: block;
-  }
-  .mobile {
-    display: none;
-  }
-}
-@media (width <= 428px) {
-  .desktop {
-    display: none;
-  }
-  .tablet {
-    display: none;
-  }
-  .mobile {
-    display: block;
-  }
-}
+} */
+
 body {
   height: 100%;
   margin: 0;
@@ -38,7 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 31.25px;
-  min-width: 640px;
 }
 body.about {
   background-color: rgb(240, 243, 244);
@@ -86,7 +67,7 @@ nav > a.ThisPage {
 div.catchPhrase.pH2 {
   text-align: center;
   margin-top: 54px;
-  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 1%;
   text-decoration: underline;
   max-height: 40px !important;
@@ -102,6 +83,10 @@ div.catchPhrase.aH2 {
 div.catchPhrase.hH2 {
   float: left;
   text-align: center;
+}
+div.catchPhrase.contact.cH2 {
+  margin-block-end: 0em;
+  margin-block-start: 0em;
 }
 section.selfDesc {
   display: flex;
@@ -166,10 +151,11 @@ div.catchPhrase > h2 {
 }
 section.contactGreeting {
   text-align: center;
+  margin-top: 85px;
 }
 section.contactMain {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 125px 55px 56px 55px;
+  margin-top: 125px 55px 56px 55px;
   display: flex;
   flex-direction: column;
 }
@@ -193,9 +179,6 @@ div.personalInfo.name {
 .contactField1 {
   margin-left: 20px;
 }
-label.contactField {
-  margin-right: 15px;
-}
 div.submit.button {
   text-align: center;
 }
@@ -207,10 +190,17 @@ div.contactField {
 input.phoneCallNumber.contactField1 {
   margin-left: 6px;
 }
-h5.messagePrompt {
+p.messagePrompt {
+  font-size: 0.8em;
+  width: 80vw;
   color: rgb(255, 127, 0);
   text-decoration: none;
-  font-weight: 400;
+  justify-content: center;
+  text-align: center;
+  text-wrap: wrap;
+}
+textarea.contactMessageField {
+  max-width: 80vw;
 }
 div.sqlInjections > p,
 div.contentArticle > p,
@@ -228,6 +218,12 @@ div.directMessage {
   flex-direction: column;
   margin: 0 auto;
 }
+div.messageMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width:80%; */
+}
 section.successMessageMain {
   margin-top: 15%;
   margin-left: 10%;
@@ -240,6 +236,9 @@ div.contactMassageSuccess {
 section.portfolio {
   font-family: Arial, Helvetica, sans-serif;
   margin: 55px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 a {
   text-decoration: none;
@@ -257,7 +256,6 @@ h3.successMessageSignature {
 section.additionalContent {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   text-align: center;
   justify-content: space-between;
 }
@@ -265,6 +263,7 @@ div.contentVideos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 div.ifURBored {
   margin-top: 15px;
@@ -328,12 +327,14 @@ div.portfolio > p {
   display: block;
   font-size: 1rem;
 }
+div > a.projectLink > img {
+  padding-bottom: 15px;
+}
 a.projectLink {
   float: right;
   padding-right: 2%;
 }
 a.projectLink > img {
-  display: flex;
   float: right;
   max-height: 250px;
 }
@@ -345,4 +346,67 @@ a.interestLinks {
 a.interestLinks > img {
   display: flex;
   max-height: 250px;
+}
+/* MEDIA QUERIES */
+@media (max-width: 801px) {
+  section.contactGreeting {
+    margin-top: 0px;
+  }
+  section.contactMain {
+    margin-top: 100px;
+  }
+  section.contactMain {
+    margin: 125px 0px 56px 0px;
+    justify-content: center;
+  }
+}
+@media (max-width: 638px) {
+  h3.successMessage,
+  h3.successMessageSignature {
+    font-size: 1em;
+  }
+}
+@media (max-width: 631px) {
+  a.projectLink > img {
+    width: 200px;
+  }
+}
+@media (max-width: 622px) {
+  section.successMessageMain {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 575px) {
+  section.contactGreeting {
+    margin-top: 0px;
+  }
+  div.personalInfo.name {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactField {
+    margin: 10px 0px;
+  }
+  div.contactInfo.contactField {
+    display: flex;
+    flex-direction: column;
+  }
+  section.successMessageMain {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 400px) {
+  section.successMessageMain {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 368px) {
+  section.successMessageMain {
+    margin-top: 185px;
+  }
+}
+@media (max-width: 234px) {
+  section.contactMain {
+    margin-top: 175px;
+  }
 }
